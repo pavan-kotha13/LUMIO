@@ -1,0 +1,98 @@
+[
+  {
+    "step": 1,
+    "name": "Sign up and log in",
+    "status": "PASS",
+    "result": "Signed up user 'Alex Chen' (alex_chen_1793408913@example.com), verified login and retrieved profile (user_id=f9c4afd6-191c-46b5-91fc-32a0430401d5)",
+    "error": "",
+    "source": "FastAPI SQLite Backend (bcrypt + JWT)"
+  },
+  {
+    "step": 2,
+    "name": "Create or upload a resume",
+    "status": "PASS",
+    "result": "Uploaded PDF parsed (414 chars extracted via PyMuPDF); Created SQLite resume ID 'd4370f68-4a40-436b-8984-8155aa25c418'",
+    "error": "",
+    "source": "PyMuPDF + SQLite ORM"
+  },
+  {
+    "step": 3,
+    "name": "Enter a real job description",
+    "status": "PASS",
+    "result": "Configured real Senior Distributed Systems Engineer JD (1102 chars, 5 mandatory pillars)",
+    "error": "",
+    "source": "Industry Benchmark Posting"
+  },
+  {
+    "step": 4,
+    "name": "Generate resume score and six-category breakdown",
+    "status": "PASS",
+    "result": "Overall Score: 87% (Strong). Categories: Technical Skills Alignment: 100/100 (30%), Keyword Alignment: 57/100 (20%), Project Relevance: 80/100 (20%), Experience Relevance: 100/100 (15%), Education Relevance: 95/100 (5%), Formatting & Readability: 100/100 (10%). Deterministic parity confirmed across runs.",
+    "error": "",
+    "source": "Python Deterministic Score Engine (backend)"
+  },
+  {
+    "step": 5,
+    "name": "Verify EvidenceMap citations against uploaded resume",
+    "status": "PASS",
+    "result": "Found 9 total requirements mapped (9 MATCHED with exact resume citations, 0 NOT FOUND). Citation sample: 'Aws' -> Experience: CloudStream Platforms: 'Demonstrated in bullet: 'Containerized and orchestrated 14 backend mic...'",
+    "error": "",
+    "source": "EvidenceMap Service (deterministic text matching)"
+  },
+  {
+    "step": 6,
+    "name": "Verify TruthGuard flags unsupported claims",
+    "status": "PASS",
+    "result": "Validated all 3 TruthGuard states via REST API: 1) Supported claim tagged SUPPORTED; 2) New metric (94.7%) tagged NEEDS_CONFIRMATION; 3) Unverified tech (Qiskit) flagged UNSUPPORTED with rationale: 'Mentions unverified technology 'Engineered' not found in candidate facts.'",
+    "error": "",
+    "source": "TruthGuard Engine (backend REST API)"
+  },
+  {
+    "step": 7,
+    "name": "Generate AI-powered resume improvements using Gemini",
+    "status": "PASS",
+    "result": "Generated 5 bullet point improvements. First suggestion: 'Architected high-throughput event-driven ingestion pipeline utilizing Go and Apa...' (TruthGuard Status: SUPPORTED). Summary: {'total_suggestions': 5, 'supported': 4, 'needs_confirmation': 0, 'unsupported': 1}",
+    "error": "",
+    "source": "Gemini 3.5 Flash Lite + TruthGuard Sanitizer"
+  },
+  {
+    "step": 8,
+    "name": "Save the resume and verify it appears in Resume History",
+    "status": "PASS",
+    "result": "Resume 'Alex Chen - Distributed Systems' verified in SQLite history (latest_score=87%). Verified 4 user activity audit records.",
+    "error": "",
+    "source": "SQLite Database (User-specific Isolation)"
+  },
+  {
+    "step": 9,
+    "name": "Edit the resume and save a new version",
+    "status": "PASS",
+    "result": "Updated resume title and content. Version count = 2. Latest Version: #2 ('Promoted target role and updated executive summary')",
+    "error": "",
+    "source": "SQLite ResumeVersion Table"
+  },
+  {
+    "step": 10,
+    "name": "Export the resume as PDF and DOCX",
+    "status": "PASS",
+    "result": "Generated ATS-compliant single-column PDF (3210 bytes, verified '%PDF-' header) and Word DOCX (36322 bytes, verified 'PK\\x03\\x04' magic bytes)",
+    "error": "",
+    "source": "ReportLab + python-docx"
+  },
+  {
+    "step": 11,
+    "name": "Test LinkedIn Optimizer with profile information",
+    "status": "PASS",
+    "result": "LinkedIn Quality Score: 82/100 (Strong Contender). Generated 3 targeted headlines, 4 narrative About styles (professional, fresher, technical, concise), and verified persistence in SQLite.",
+    "error": "",
+    "source": "LinkedIn Optimizer Service + SQLite"
+  },
+  {
+    "step": 12,
+    "name": "Refresh the application and verify saved data persists",
+    "status": "PASS",
+    "result": "New session verified full SQLite data persistence: User 'alex_chen_1793408913@example.com', Resume 'Alex Chen - Distributed Systems (v2 Staff Architect)' (Score: 87%), 2 versions, and LinkedIn score (82/100) intact.",
+    "error": "",
+    "source": "SQLite Persistent Storage"
+  }
+]

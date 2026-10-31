@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-canvas: #FAF8F5;
+    --surface-white: #FFFFFF;
+    --surface-subtle: #F3EFE7;
+    --border-subtle: #E5E1D7;
+    --border-medium: #D6D1C4;
+    --color-primary: #1B4332;
+    --color-primary-hover: #143627;
+    --color-primary-light: #2D6A4F;
+    --color-primary-subtle: #EBF2EC;
+    --text-charcoal: #1C201D;
+    --text-muted: #57605A;
+    --text-subtle: #848E88;
+  }
+
+  * {
+    border-color: var(--border-subtle);
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-charcoal);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Editorial newsreader serif utility for accent quotes and badges */
+  .font-editorial {
+    font-family: 'Newsreader', Georgia, serif;
+  }
+}
+
+/* Custom subtle utility shadow for cards matching warm architectural aesthetic */
+.shadow-subtle {
+  box-shadow: 0 1px 3px 0 rgba(28, 32, 29, 0.04), 0 1px 2px -1px rgba(28, 32, 29, 0.04);
+}
+
+.shadow-card {
+  box-shadow: 0 4px 12px -2px rgba(28, 32, 29, 0.05), 0 2px 4px -1px rgba(28, 32, 29, 0.03);
+}
+
+.shadow-elevated {
+  box-shadow: 0 12px 24px -4px rgba(28, 32, 29, 0.07), 0 4px 8px -2px rgba(28, 32, 29, 0.04);
+}
